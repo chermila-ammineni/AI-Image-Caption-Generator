@@ -1,7 +1,7 @@
 # AI-Image-Caption-Generator
 This project employs the BLIP transformer model to generate descriptive captions for images. It preprocesses visual input, performs inference using a pretrained vision-language model, and presents results via an interactive Gradio interface for seamless user engagement.
 
-#🚀 Features
+1.🚀 Features
 ✅ Pretrained BLIP model from Hugging Face
 
 🧠 Zero-shot image captioning (no training required)
@@ -12,10 +12,12 @@ This project employs the BLIP transformer model to generate descriptive captions
 
 📦 Lightweight and easy to deploy
 
-#🛠️ Installation
+2.🛠️ Installation
 bash
 pip install torch torchvision transformers gradio
-📸 Usage
+
+📸 UsagE
+
 Run the script in your Python environment or Google Colab:
 
 python
@@ -45,16 +47,17 @@ def predict(image):
 
 interface = gr.Interface(fn=predict, inputs=gr.Image(type="pil"), outputs="text", title="AI Image Caption Generator")
 interface.launch()
-#🧪 Example
+3.🧪 Example
   Upload an image of a dog playing in the park, and the model might return: "A dog running through a grassy field on a sunny day."
   <img width="1633" height="810" alt="Screenshot 2025-09-05 113124" src="https://github.com/user-attachments/assets/5805e1f9-1fe2-4d9b-966a-0cd5c437a328" />
 
 
-#📚 Model Details
+4.📚 Model Details
   Model: Salesforce/blip-image-captioning-base
 
   Architecture: Vision-language transformer
 
   Source: Hugging Face Model Card
-#Summary
-        This project is an AI-driven image captioning system that utilizes the BLIP (Bootstrapped Language Image Pretraining) transformer model to generate descriptive text from visual input. By leveraging a pretrained vision-language model from Hugging Face, it processes images and produces natural language captions without requiring additional training. The integration of a Gradio interface allows users to interact with the model seamlessly, enabling real-time image uploads and instant caption generation in a user-friendly web environment.
+  
+5.Summary:
+This project is an AI-driven image captioning system that utilizes the BLIP (Bootstrapped Language Image Pretraining) transformer model to generate descriptive text from visual input. By leveraging a pretrained vision-language model from Hugging Face, it processes images and produces natural language captions without requiring additional training. The integration of a Gradio interface allows users to interact with the model seamlessly, enabling real-time image uploads and instant caption generation in a user-friendly web environment.
